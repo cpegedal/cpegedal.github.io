@@ -6,4 +6,4 @@
 
 ## Diagram til Whack a Pirate board
 
-![Diagram til ESP32 board](board.drawio.svg)
+![Diagram til ESP32 board](/assets/images/2022-09-01-whack-a-pirate/image-1.drawio.svg)
