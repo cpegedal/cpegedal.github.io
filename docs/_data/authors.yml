@@ -1,0 +1,77 @@
+Nicolai Hannen:
+  name             : "Nicolai Hannen"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : |
+                      Frivillig.
+                      3D-print, elektronik, Python, mekanik, robotter, microBit, Scratch
+  uri              : 
+  email            :
+  location         : 
+  uri              : 
+  github           : 
+
+Fredrik Lammers:
+  name             : "Fredrik Lammers"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : |
+                      Frivillig.
+                      Scratch, GDevelop, microBit
+  uri              : 
+  email            :
+  location         : 
+  uri              : 
+  github           : 
+
+Carsten Lammers:
+  name             : "Carsten Lammers"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : |
+                      Frivillig.
+                      3D-print, elektronik, Python, C, mekanik, robotter, microBit, Scratch
+  uri              : 
+  email            :
+  location         : 
+  uri              : 
+  github           : 
+
+Asbjørn Pedersen:
+  name             : "Asbjørn Pedersen"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : |
+                      Frivillig.
+                      3D-print, elektronik, Python, C, robotter, microBit, Scratch
+  uri              : 
+  email            :
+  location         : 
+  uri              : 
+  github           : 
+
+Kim Poulsen:
+  name             : "Kim Poulsen"
+  avatar           : # "https://avatars.githubusercontent.com/u/4174578?v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : |
+                      Kaptajn og frivillig.
+                      3D-print, Blender, SonicPi, Python, C, microBit, robotter, elektronik, App Inventor 2
+  location         : 
+  email            : 
+  linkedin         : 
+  uri              : "https://kpoppel.github.io"
+  github           : "https://github.com/kpoppel"
+
+
+# Template:
+#John Doe:
+#  name             :  # Author name
+#  avatar           :  # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+#  bio              : |
+#                      # Some bio
+#                      # can be more lines
+#  location         : 
+#  email            : 
+#  linkedin         : 
+#  uri              : # Website
+#  github           : "https://github.com/<...>"
+#  links:
+#    - label: "xyz"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://abc.def"

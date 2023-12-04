@@ -1,0 +1,37 @@
+main:
+  - title: Instruktioner
+    url: /instruktioner/
+#  - title: "Kategorier"
+#    url: /categories/
+#  - title: "Sider"
+#    url: /page-archive/
+#  - title: "Collections"
+#    url: /collection-archive/
+#  - title: "External Link"
+#    url: https://google.com
+  - title: "Artikler"
+    url: /year-archive/
+  - title: "Om"
+    url: /about/
+
+sidebar:
+  - title: Emner
+    children:
+      - title: "ESP32"
+        url: /instruktioner/esp32/
+      - title: "Blender"
+        url: /instruktioner/blender/
+      - title: "Python"
+        url: /instruktioner/python/
+      #- title: "Scratch"
+      #  url: /instruktioner/scratch/
+#  - title: "Kategorier"
+#    url: /categories/
+  - title: "Tags"
+    url: /tags/
+#  - title: "Sider"
+#    url: /page-archive/
+#  - title: "Collections"
+#    url: /collection-archive/
+#  - title: "External Link"
+#    url: https://google.com
