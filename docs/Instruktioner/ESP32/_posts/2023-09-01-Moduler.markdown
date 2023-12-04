@@ -1,0 +1,79 @@
+---
+title: Moduler til ESP32
+layout: single
+tags: programmering
+---
+
+Vi bruger forskellige moduler sammen med ESP32-mikrocontrolleren. Dem gennemgår vi her.
+
+# Radar RCWL-0516
+
+![Radar](/assets/images/2023-09-01-Moduler/image-1.png)
+
+Radaren er en mikrobølgeradar som skal forsynes med 4-28V.  Så sæt den på 5V-forsyningen.  Modulet har et 3.3V output som kan bruges til at drive noget andet kredsløb.  Modulet har en `out` pin, som er 0V når der ingen bevægelse er, og 3.3V når der er bevægelse.
+På ESP32 kan man derfor forbinde `out` til en GPIO og aflæse den. `out` vil være høj i et par sekunder hver gang der detekteres bevægelse.
+
+* [Datablad](https://github.com/kpoppel/codingpirates/blob/main/ESP32/datablade/Datasheet_rcwl-0516.pdf)
+* [Python kode](https://github.com/kpoppel/codingpirates/blob/main/ESP32/microPython/moduler/radar.py)
+* [Mere information](https://circuitdigest.com/microcontroller-projects/arduino-rcwl-0516-radar-sensor-interfacing)
+
+# MP3-dekoder FN-M16P/DFR0299
+
+![MP3-dekoder](/assets/images/2023-09-01-Moduler/image-2.png)
+
+MP3-dekoderen kan afkode MP# og WAV-filer gemt på de micro-SDkort som man kan komme i modulet.  Modulet skal forsynes med 5V, og forbindes med seriel-protokol (RX/TX) over to GPIOer på ESP32.  En højttaler kan forbindes direkte til modulet, så en ekstra forstærker er ikke nødvendig.
+Modulet skal bruge en driver, da det kan en masse ting.  Sådan en har vi heldigvis fundet, og forbedret lidt til vores projekter.
+
+* [Datablad](https://github.com/kpoppel/codingpirates/blob/main/ESP32/datablade/DFPlayer-ok.pdf)
+* [Driver](https://github.com/kpoppel/codingpirates/blob/main/ESP32/microPython/moduler/lib/dfplayermini.py)
+* [Python kode](https://github.com/kpoppel/codingpirates/blob/main/ESP32/microPython/moduler/mp3.py)
+
+# 0.91" sort/hvid OLED-display SSD1306
+
+![OLED display](/assets/images/2023-09-01-Moduler/image-3.png)
+
+Et lille display med en opløsning på 128x32 pixels.  Displayet kan bruges med I2C eller SPI.  Vi bruger et modul med I2C-pins.
+Driveren kan findes i Thonnys pakke-håndtering, og vi har en kopi i vores eget Git-repository som er linket her.
+
+* [Datablad](https://github.com/kpoppel/codingpirates/blob/main/ESP32/datablade/SSD1306.pdf)
+* [Driver](https://github.com/kpoppel/codingpirates/blob/main/ESP32/microPython/moduler/lib/ssd1306.py)
+* [Python kode](https://github.com/kpoppel/codingpirates/blob/main/ESP32/microPython/moduler/display.py)
+
+# 1.8" TFT farvedisplay ST7735
+
+![TFT farvedisplay](/assets/images/2023-09-01-Moduler/image-4.png)
+
+Et farvedisplay med en opløsning på 128x160 pixels.  Displayet er forbundt med SPI, da der er rigtig mange pixels der skal skrives for at opdatere hele skærmen.  SPI-interfacet kan i princippet køre 32MHz, så det bliver nok mest hastigheden af programmet (microPYthon eller C), der afgør hvor hurtigt skærmen kan drives.
+
+* [Driver og fonte](https://github.com/GuyCarver/MicroPython/blob/master/lib/ST7735.py)
+* [En anden driver]()
+* _Python kode_
+
+# 2x3W digital forstærker PAM8403-GF1002/GS27076
+
+![DIgital forstærker](/assets/images/2023-09-01-Moduler/image-5.png)
+
+Modulet har en digital klasse D forstærker og et potentiometer til at kontrollere lydstyrke og tænd/sluk.  Modulet kan forsynes med 2.5-5V.  Det er nok en god idé at bruge 5V.  Hvis den skal forstærke alle 6W vil modulet trække $P = I * V => I = 5/6 = 833 mA$.  MicroUSB kan forsyne op til 9W.
+
+Modulet kan bruges sammen med et digital-til-analog output (DAC) fra ESP32, eller headset-outputtet fra MP#-modulet.
+
+# Lyd-detektor 
+
+![Lyd-detektor](/assets/images/2023-09-01-Moduler/image-6.png)
+
+Modulet bruges til at detektere lyd i stil med radaren.  Forsynes fra 3.3-5V.  Modulet har et digitalt output (DO) og et analogt output (AO).  Der er også 2 LEDs.  En der lyser når der er strøm på modulet, og en der lyser når detektertingsgrænsen sat med potentiometeret er overskredet.
+
+Det digitale output går høj når grænsen er overskredet.  Det analoge output ser ud til at være forbundet direkte til mikrofonen over en spændingsdeler med potentiometeret.  Måske betyder det at man kan optage lyd?
+
+![Elektrisk diagram](/assets/images/2023-09-01-Moduler/image-7.png)
+
+* [Mere information](https://makerselectronics.com/product/microphone-sound-detection-sensor-4-pin)
+* _Python kode_
+
+# Forsyningsmodul MB-102
+
+![Forsyningsmodul](/assets/images/2023-09-01-Moduler/image-8.png)
+
+Forsyningsmodulet kan bruges til at aflaste eller erstatte USB-forsyningen via microUSB-stikket på ESP32.  Modulet kan forsynes fra 6.5-12V med rundt stik eller USB type A.  Der er to output-kanaler til 0V, 3.3V eller 5V og maksimalt 700mA per kanal.
+
+* [Mere information](https://components101.com/modules/5v-mb102-breadboard-power-supply-module)
