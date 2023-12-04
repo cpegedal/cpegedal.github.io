@@ -6,6 +6,14 @@ tags: programmering
 
 Vi bruger forskellige moduler sammen med ESP32-mikrocontrolleren. Dem gennemgår vi her.
 
+# ESP32 Devkit C (AZ-delivery)
+
+![ESP32](/assets/images/2023-09-01-Moduler/image-9.png)
+
+![ESP32 pinput](/assets/images/2023-09-01-Moduler/image-10.png)
+
+Modulet er vores arbejdshest, og den lille computer vi programmerer på.
+
 # Radar RCWL-0516
 
 ![Radar](/assets/images/2023-09-01-Moduler/image-1.png)
