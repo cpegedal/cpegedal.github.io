@@ -2,49 +2,57 @@ Nicolai Hannen:
   name             : "Nicolai Hannen"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : |
-                      Frivillig.
+                      Bestyrelsesmedlem, frivillig.
                       3D-print, elektronik, Python, mekanik, robotter, microBit, Scratch
-  uri              : 
-  email            :
-  location         : 
-  uri              : 
-  github           : 
 
 Fredrik Lammers:
   name             : "Fredrik Lammers"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : |
-                      Frivillig.
+                      Bestyrelsesmedlem, frivillig.
                       Scratch, GDevelop, microBit
-  uri              : 
-  email            :
-  location         : 
-  uri              : 
-  github           : 
 
 Carsten Lammers:
   name             : "Carsten Lammers"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : |
-                      Frivillig.
+                      Næstformand, frivillig.
                       3D-print, elektronik, Python, C, mekanik, robotter, microBit, Scratch
-  uri              : 
-  email            :
-  location         : 
-  uri              : 
-  github           : 
+
+Carsten Lammers:
+  name             : "Carsten Lammers"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : |
+                      Næstformand, frivillig.
+                      3D-print, elektronik, Python, C, mekanik, robotter, microBit, Scratch
 
 Asbjørn Pedersen:
   name             : "Asbjørn Pedersen"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : |
-                      Frivillig.
+                      Kasserer og frivillig.
                       3D-print, elektronik, Python, C, robotter, microBit, Scratch
-  uri              : 
-  email            :
-  location         : 
-  uri              : 
-  github           : 
+
+Morten Susten:
+  name             : "Morten Susten"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : |
+                      Frivillig.
+                      Robotter, Scratch, GDevelop, Python
+
+Michael Vestergaard:
+  name             : "Michael Vestergaard"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : |
+                      Frivillig.
+                      GDevelop, Scratch
+
+Adnan Tabassam:
+  name             : "Adnan Tabassam"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : |
+                      Frivillig.
+                      Robotter, Scratch
 
 Kim Poulsen:
   name             : "Kim Poulsen"
@@ -52,12 +60,20 @@ Kim Poulsen:
   bio              : |
                       Kaptajn og frivillig.
                       3D-print, Blender, SonicPi, Python, C, microBit, robotter, elektronik, App Inventor 2
-  location         : 
-  email            : 
-  linkedin         : 
   uri              : "https://kpoppel.github.io"
   github           : "https://github.com/kpoppel"
 
+Dorthe stenum:
+  name             : "Dorthe Stenum"
+  avatar           : # "https://avatars.githubusercontent.com/u/4174578?v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : |
+                      Formand.
+
+Suzanne Qvist:
+  name             : "Suzanne Qvist"
+  avatar           : # "https://avatars.githubusercontent.com/u/4174578?v=4" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : |
+                      Vores gode hjælper-bag-ved-det-hele :-)
 
 # Template:
 #John Doe:

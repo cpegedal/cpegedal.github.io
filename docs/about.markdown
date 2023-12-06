@@ -7,4 +7,4 @@ Foreningen blev startet i 2018, og havde til huse på Smørum bibliotek de førs
 
 Vi mangler altid frivillige, og nogle der vil lave the eller deltage i ekstra arrangementer.
 
-Forfattere til siderne på sitet er [her](/instructors/)
+Frivillige, bestyrelsen og forfattere til siderne på sitet er [her](/instructors/)
